@@ -1,0 +1,71 @@
+<html>
+<head>
+<style>
+    ul.navBar {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        background-color: #4277f4;
+        cursor: pointer;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    li:hover {
+        background-color: #A2AEB3;
+    }
+
+    .dropDownContent {
+        display: none;
+        position: absolute;
+        background-color: #7DC9E3;
+        width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        text-decoration: none;
+
+    }
+    .dropDownContent a {
+        color: white;
+        display: block;
+
+    }
+    .dropDownContent a:hover{
+        background-color: #4A96B0;
+    }
+
+
+    li.dropDownBtn:hover .dropDownContent{
+        display: block;
+    }
+
+</style>
+</head>
+
+<body>
+    <ul class="navBar">
+    <li><a href="#">Home</a></li>
+    <li class="dropDownBtn"><a href="#">Products</a>
+        <div class="dropDownContent">
+            <a href="#">Product1</a>
+            <a href="#">Product2</a>
+            <a href="#">Product3</a>
+        </div>
+    </li>
+    <li><a href="#">Service</a></li>
+    <li><a href="#">Contact</a></li>
+</body>
+</html>
